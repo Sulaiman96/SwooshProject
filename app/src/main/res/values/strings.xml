@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Swoosh</string>
+    <string name="what_kind_of_scrimmage">What kind of scrimmage?</string>
+    <string name="casual_scrimmage">Casual Scrimmage</string>
+    <string name="semi_competitive_button">Semi Competitive Button</string>
+    <string name="competitive">Competitive</string>
+    <string name="find_a_scrimmage">Find A Scrimmage</string>
+    <string name="find_a_court_to_play_today">Find a court to play today!</string>
+    <string name="work_hard_get_better">Work Hard, Get Better.</string>
+    <string name="background_image">Background image</string>
+    <string name="swoosh_logo">swoosh logo</string>
 </resources>
