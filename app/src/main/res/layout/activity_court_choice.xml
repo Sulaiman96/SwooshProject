@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".CourtChoice">
+        tools:context=".Controller.CourtChoice">
 
     <ImageView
             android:layout_width="0dp"
@@ -77,21 +77,21 @@
         <ToggleButton
                 android:text="@string/beginner"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton3" android:layout_weight="1"
+                android:layout_height="wrap_content" android:id="@+id/beginnerButton" android:layout_weight="1"
                 android:textColor="#FFFFFF" android:fontFamily="@font/gilda_display" android:textSize="18sp"
                 android:background="@drawable/swoosh_drawable" android:textOff="@string/beginner"
                 android:textOn="@string/beginner" android:layout_marginEnd="8dp"/>
         <ToggleButton
                 android:text="@string/average"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton4" android:layout_weight="1"
+                android:layout_height="wrap_content" android:id="@+id/averageButton" android:layout_weight="1"
                 android:textColor="#FFFFFF" android:fontFamily="@font/gilda_display" android:textSize="18sp"
                 android:background="@drawable/swoosh_drawable" android:textOff="@string/average"
                 android:textOn="@string/average" android:layout_marginLeft="8dp" android:layout_marginRight="8dp"/>
         <ToggleButton
                 android:text="@string/baller"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton5" android:layout_weight="1"
+                android:layout_height="wrap_content" android:id="@+id/ballerButton" android:layout_weight="1"
                 android:textColor="#FFFFFF" android:fontFamily="@font/gilda_display" android:textSize="18sp"
                 android:background="@drawable/swoosh_drawable" android:textOff="@string/baller"
                 android:textOn="@string/baller" android:layout_marginStart="8dp"/>

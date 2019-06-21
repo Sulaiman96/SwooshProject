@@ -1,21 +1,21 @@
 <resources>
     <string name="app_name">Swoosh</string>
     <string name="what_kind_of_scrimmage">What kind of scrimmage?</string>
-    <string name="casual_scrimmage">Casual Scrimmage</string>
-    <string name="semi_competitive_button">Semi Competitive Button</string>
-    <string name="competitive">Competitive</string>
+    <string name="casual_scrimmage">casual scrimmage</string>
+    <string name="semi_competitive_button">semi competitive button</string>
+    <string name="competitive">competitive</string>
     <string name="find_a_scrimmage">Find A Scrimmage</string>
     <string name="find_a_court_to_play_today">Find a court to play today!</string>
     <string name="work_hard_get_better">Work Hard, Get Better.</string>
     <string name="background_image">Background image</string>
     <string name="swoosh_logo">swoosh logo</string>
-    <string name="indoor">Indoor</string>
-    <string name="outdoor">Outdoor</string>
+    <string name="indoor">indoor</string>
+    <string name="outdoor">outdoor</string>
     <string name="next">Next</string>
-    <string name="court">Court:</string>
-    <string name="level">Level:</string>
-    <string name="baller">Baller</string>
-    <string name="average">Average</string>
-    <string name="beginner">Beginner</string>
+    <string name="court">court:</string>
+    <string name="level">level:</string>
+    <string name="baller">baller</string>
+    <string name="average">average</string>
+    <string name="beginner">beginner</string>
     <string name="let_s_play">let\'s play !</string>
 </resources>

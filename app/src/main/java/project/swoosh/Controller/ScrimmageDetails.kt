@@ -1,10 +1,11 @@
-package project.swoosh
+package project.swoosh.Controller
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_scrimmage_details.*
+import project.swoosh.Utilities.EXTRA_SCRIMMAGE
+import project.swoosh.R
 
 class ScrimmageDetails : BaseActivity() {
 
