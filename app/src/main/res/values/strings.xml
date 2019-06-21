@@ -9,4 +9,13 @@
     <string name="work_hard_get_better">Work Hard, Get Better.</string>
     <string name="background_image">Background image</string>
     <string name="swoosh_logo">swoosh logo</string>
+    <string name="indoor">Indoor</string>
+    <string name="outdoor">Outdoor</string>
+    <string name="next">Next</string>
+    <string name="court">Court:</string>
+    <string name="level">Level:</string>
+    <string name="baller">Baller</string>
+    <string name="average">Average</string>
+    <string name="beginner">Beginner</string>
+    <string name="let_s_play">let\'s play !</string>
 </resources>
