@@ -49,9 +49,9 @@
                 android:text="@string/casual_scrimmage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/casualScrimmageButton" android:textOff="@string/casual_scrimmage" android:textOn="@string/casual_scrimmage"
-                android:background="@drawable/swoosh_drawable" android:textColor="#FFFFFF"
-        />
+                android:id="@+id/casualScrimmageButton" android:textOff="@string/casual_scrimmage"
+                android:textOn="@string/casual_scrimmage"
+                android:background="@drawable/swoosh_drawable" android:textColor="#FFFFFF"/>
         <ToggleButton
                 android:text="@string/semi_competitive_button"
                 android:layout_width="match_parent"
@@ -63,7 +63,8 @@
                 android:text="@string/competitive"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/competitiveButton"
-                android:layout_marginBottom="8sp" android:textOff="@string/competitive" android:textOn="@string/competitive"
+                android:layout_marginBottom="8sp" android:textOff="@string/competitive"
+                android:textOn="@string/competitive"
                 android:background="@drawable/swoosh_drawable" android:textColor="#FFFFFF"/>
     </LinearLayout>
     <Button
