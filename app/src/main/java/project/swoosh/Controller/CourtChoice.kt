@@ -1,33 +1,40 @@
 package project.swoosh.Controller
 
 import android.content.Intent
-import android.os.BatteryManager.EXTRA_LEVEL
 import android.os.Bundle
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_court_choice.*
+import project.swoosh.Model.Player
 import project.swoosh.R
-import project.swoosh.Utilities.EXTRA_COURT
-import project.swoosh.Utilities.EXTRA_SCRIMMAGE
+import project.swoosh.Utilities.EXTRA_PLAYER
 
 @Suppress("NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
 class CourtChoice : BaseActivity() {
 
-    var courtChoice = ""
-    var levelChoice = ""
-    var scrimmageDetails = ""
+    lateinit var player : Player
+
+    override fun onSaveInstanceState(outState: Bundle?) {
+        super.onSaveInstanceState(outState)
+        outState?.putParcelable(EXTRA_PLAYER, player)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
+        super.onRestoreInstanceState(savedInstanceState)
+        if(savedInstanceState != null){
+            player = savedInstanceState.getParcelable(EXTRA_PLAYER)!!
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_court_choice)
 
-        scrimmageDetails = intent.getStringExtra(EXTRA_SCRIMMAGE)
+        player = intent.getParcelableExtra(EXTRA_PLAYER)
 
         playButton.setOnClickListener(){
-            if(courtChoice != "" && levelChoice != ""){
+            if(player.courtType != "" && player.level != ""){
                 val courtAndLevelIntent = Intent(this, FinishActivity::class.java)
-                courtAndLevelIntent.putExtra(EXTRA_SCRIMMAGE, scrimmageDetails)
-                courtAndLevelIntent.putExtra(EXTRA_COURT, courtChoice)
-                courtAndLevelIntent.putExtra(EXTRA_LEVEL, levelChoice)
+                courtAndLevelIntent.putExtra(EXTRA_PLAYER, player)
                 startActivity(courtAndLevelIntent)
             }else{
                 Toast.makeText(this, "Please Select all of the options", Toast.LENGTH_SHORT).show()
@@ -37,34 +44,34 @@ class CourtChoice : BaseActivity() {
         indoorButton.setOnClickListener(){
             outdoorButton.isChecked = false
 
-            courtChoice = "indoor"
+            player.courtType = "indoor"
         }
 
         outdoorButton.setOnClickListener(){
             indoorButton.isChecked = false
 
-            courtChoice = "outdoor"
+            player.courtType = "outdoor"
         }
 
         beginnerButton.setOnClickListener(){
             averageButton.isChecked = false
             ballerButton.isChecked = false
 
-            levelChoice = "beginner"
+            player.level = "beginner"
         }
 
         averageButton.setOnClickListener(){
             beginnerButton.isChecked = false
             ballerButton.isChecked = false
 
-            levelChoice = "average"
+            player.level = "average"
         }
 
         ballerButton.setOnClickListener(){
             beginnerButton.isChecked = false
             averageButton.isChecked = false
 
-            levelChoice = "baller"
+            player.level = "baller"
         }
 
     }
